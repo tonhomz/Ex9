@@ -40,7 +40,6 @@ public class AreaPerimeterOfCircle extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        response.setContentType("text/html;charset=UTF-8");
         String radiusStr = request.getParameter("Radius");
         double radius = Double.parseDouble(radiusStr);
         double area = Math.PI*radius*radius;
@@ -55,7 +54,7 @@ public class AreaPerimeterOfCircle extends HttpServlet {
             out.println("<body>");
             out.println("<h1>For the circle with radius = " + radiusStr + "</h1>");
             out.println("<h1>Area is " + area + "</h1>");
-            out.println("<h1>Perimater is " + perimeter + "</h1>");
+            out.println("<h1>Perimeter is " + perimeter + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
